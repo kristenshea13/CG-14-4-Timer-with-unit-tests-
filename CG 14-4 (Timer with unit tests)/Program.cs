@@ -10,7 +10,7 @@ namespace CG_14_4__Timer_with_unit_tests_
             Console.WriteLine("Timer program");
 
             Console.Write("Type the length of time between now and when you would like the timer to go off in hours, minutes, and seconds \n" +
-                "(example: type 5:41:19 to have the timer go off in 5 hours 41 minutes and 19 seconds): ");
+                "(examples: 5:41:19 to have the timer go off in 5 hours 41 minutes and 19 seconds, 1:34 to have timer go off in \n1 hour 34 minutes, 3 to have timer go off in 3 hours): ");
 
             string timeString = Console.ReadLine();
 
@@ -34,8 +34,7 @@ namespace CG_14_4__Timer_with_unit_tests_
 
         private static void TimedEvent(Object source, ElapsedEventArgs e)
         {
-            Console.WriteLine("Elapsed: {0:HH:mm:ss}",
-                              e.SignalTime);
+            Console.WriteLine("Elapsed: {0:HH:mm:ss}", e.SignalTime);
         }
     }
 }
