@@ -27,14 +27,16 @@ namespace CG_14_4__Timer_with_unit_tests_
                 Timer timer = new Timer(SetTime.TotalMilliseconds(timeString));
                 timer.Elapsed += TimedEvent;
                 timer.Start();
+                Console.ReadLine();
+                timer.Stop();
             }
 
-            Console.ReadLine();
+            
         }
 
         private static void TimedEvent(Object source, ElapsedEventArgs e)
         {
-            Console.WriteLine("Time's Up: {0:HH:mm:ss}", e.SignalTime);
+            Console.WriteLine("Time's Up: {0:HH:mm:ss}. Hit enter to stop timer.", e.SignalTime);
         }
     }
 }
