@@ -8,15 +8,16 @@ namespace CG_14_4__Timer_with_unit_tests_
         {
             string[] timestringSplit = timeString.Split(":");
 
-            int hours = 0;
-            int minutes = 0;
-            int seconds = 0;
-            int totalMinutes = 0;
-            int totalSeconds = 0;
+            
 
             //try can for error handling...if set time not entered in proper format, method will return 0.
             try
             {
+                int hours = 0;
+                int minutes = 0;
+                int seconds = 0;
+                int totalMinutes = 0;
+                int totalSeconds = 0;
                 //parse out hours, minutes, seconds from user entry.
 
                 for (int i = 0; i < timestringSplit.Length; i++)
