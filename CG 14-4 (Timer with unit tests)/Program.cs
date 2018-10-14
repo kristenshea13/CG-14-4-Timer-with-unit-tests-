@@ -31,7 +31,7 @@ namespace CG_14_4__Timer_with_unit_tests_
                 timer.Stop();
             }
 
-            
+            Console.ReadLine();
         }
 
         private static void TimedEvent(Object source, ElapsedEventArgs e)
