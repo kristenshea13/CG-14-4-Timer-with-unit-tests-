@@ -21,6 +21,7 @@ namespace CG_14_4__Timer_with_unit_tests_
             if (SetTime.TotalMilliseconds(timeString) == 0)
             {
                 Console.WriteLine("Error. Set time not in proper format.");
+                Console.ReadLine();
             }
             else
             {
@@ -31,7 +32,7 @@ namespace CG_14_4__Timer_with_unit_tests_
                 timer.Stop();
             }
 
-            Console.ReadLine();
+            
         }
 
         private static void TimedEvent(Object source, ElapsedEventArgs e)
